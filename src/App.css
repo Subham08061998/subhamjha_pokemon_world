@@ -1,0 +1,185 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.div1{
+  background-color: #18676a;
+  height: 250px;
+  background-image: linear-gradient( red, yellow);
+}
+
+.header1{
+  background-color: #bed0d1;
+  width: 450px;
+  float: left;
+  height: 157px;
+  margin:31px 31px 31px 205px;
+  text-align: center;
+  background-image: linear-gradient( #124cdfdc,rgb(163, 220, 213));
+  padding: 15px;
+  border-radius: 41px;
+}
+
+.header2{
+  background-color: #cfd199;
+  width: 450px;
+  float: right;
+  height: 182px;
+  margin:31px 205px 31px 31px;
+  text-align: center;
+  background-image:url('./assets/images/pokemon.jpg');
+
+}
+
+.img1{
+  height: 18px;
+}
+.div2{
+  background-color: #00BFFF;
+  width: 450px;
+  height: 264px;
+  float: left;
+  margin: 75px;
+}
+.div4{
+  background-color:#18676a;
+  height: 30px;
+}
+.div5{
+  background-color:white;
+  width: 427px;
+    height: 207px;
+    margin-left: 11px;
+    border-radius: 7px;
+}
+.div3{
+  background-color: #00BFFF;
+  width: 450px;
+  height: 279px;
+  float: right;
+  margin: 75px;
+}
+.div6{
+  background-color: white;
+  margin: 19px;
+    border-radius: 3px;
+}
+.img2{
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  height: 182px;
+}
+
+.searchBox{
+  height: 30px;
+  width: 175px;
+  border-radius: 11px;
+  border-width: 0px;
+}
+.searchText{
+  font-family: cursive;
+  background-color: rgb(209, 198, 122);
+  animation-name: searchWord;
+  animation-duration: 4s;
+  animation-iteration-count: 10;
+  border-radius: 11px;
+  color: white;
+}
+.img4{
+  margin: 131px 26px 26px 26px;
+  height: 76px;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+.button{
+  background-image: url('./assets/images/searchicon.png');
+  height: 31px;
+    width: 31px;
+    z-index: -1;
+    margin-left: -31px;
+    background-repeat: no-repeat;
+    border-width: 0px;
+    border-radius: 14px;
+}
+.subh1{
+  background-color:#dacece;
+}
+
+.subh2{
+  background-color: greenyellow;
+}
+.div7{
+  background-color: #ff0200;
+}
+.subh3{
+  text-align: center;
+}
+.div8{
+    background-color: #4e464d;
+    height: 130px;
+    width: 130px;
+    z-index: -1;
+    margin-left: 282px;
+    margin-top: -148px;
+}
+.img3{
+  height: 130px;
+  width: 130px;
+}
+#img4 {animation-timing-function: ease-out;}
+
+
+@keyframes pokemonImg {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+@keyframes searchWord {
+  0%   {background-color: rgb(217, 228, 139);}
+  25%  {background-color: rgb(195, 123, 175);}
+  50%  {background-color: rgb(179, 135, 216);}
+  100% {background-color: rgb(134, 197, 134);}
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
